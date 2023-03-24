@@ -1,1 +1,6 @@
 rootProject.name = 'task-ranger'
+
+include 'user-service'
+include 'broadcast-service'
+include 'command-service'
+include 'query-service'
