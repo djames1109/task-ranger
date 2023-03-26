@@ -1,0 +1,3 @@
+bootJar {
+    mainClass = 'org.castle.djames.taskranger.broadcastservice.Application'
+}
