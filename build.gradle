@@ -25,17 +25,22 @@ subprojects {
 
 //        DECLARE DEFAULT VERSIONS OF DEPENDENCIES
         dependencies {
+            dependency 'org.projectlombok:lombok:1.18.26'
 
         }
     }
 
     dependencies {
-//    Starter
+//        Starter
         implementation 'org.springframework.boot:spring-boot-starter'
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-actuator'
 
-//    Test
+//        Lombok
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+
+//        Test
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
     }
 

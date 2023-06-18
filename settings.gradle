@@ -4,5 +4,6 @@ include 'user-service'
 include 'broadcast-service'
 include 'command-service'
 include 'query-service'
+include 'core'
 
 rootProject.children.each {it -> it.name="${rootProject.name}-${it.name}"}

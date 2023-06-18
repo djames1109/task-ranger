@@ -9,7 +9,9 @@ public class CommandController {
 
     @GetMapping("/test")
     public ResponseEntity<?> test() {
-        return ResponseEntity.ok("The quick brown fox jumps over the head of the lazy dog.");
+        return ResponseEntity.ok("Test");
     }
+
+//    TODO: Add endpoint for creating new task
 
 }
