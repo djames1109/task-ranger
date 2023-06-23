@@ -1,3 +1,27 @@
-bootJar {
-    mainClass = 'org.castle.djames.taskranger.queryservice.Application'
+plugins {
+    id 'org.springframework.boot' version '3.1.1'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//        Starter
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-actuator'
+
+//        Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+//        Test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+//bootJar {
+//    mainClass = 'org.castle.djames.taskranger.queryservice.Application'
+//}
